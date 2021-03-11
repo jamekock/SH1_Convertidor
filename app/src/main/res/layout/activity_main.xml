@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="364dp"
+        android:layout_height="329dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdBtnDolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dólar americano - USD a Peso Dominicano DOP " />
+
+        <RadioButton
+            android:id="@+id/rdBtnEuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Euro - EUR a Peso Dominicano - DOP " />
+
+        <RadioButton
+            android:id="@+id/rdBtnLibra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Libra esterlina - GBP a Peso Dominicano - DOP " />
+
+        <RadioButton
+            android:id="@+id/rdBtnFranco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Franco suizo - CHF a Peso Dominicano - DOP" />
+
+        <RadioButton
+            android:id="@+id/rdBtnYen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yen japonés - 1PY a Peso Dominicano - DOP" />
+
+        <RadioButton
+            android:id="@+id/rdBtnDolarH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dólar hongkonés - HKD a Peso Dominicano - DOP " />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblTittle"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="177dp"
+        android:text="Introduce cantidad a cambiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName|text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="174dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad"
+
+        />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="147dp"
+        android:onClick="Convertir"
+        android:text="Convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
